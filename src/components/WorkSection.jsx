@@ -50,17 +50,21 @@ export default function WorkSection({ layout }) {
           {layout === 'cards' && (
             <div className="cards">
               {WORK.map((w) => (
-                <a className="card reveal" key={w.id} href="#" data-hover="big">
+                <div className="card reveal" key={w.id} data-hover="big">
                   <div className="card-media">
                     <div className="card-lab">{w.num}</div>
-                    <div className="card-pl">— project tile —</div>
+                    <div className="card-metric">{w.metric}</div>
+                    <div className="card-metric-label">{w.metricLabel}</div>
+                    <ul className="card-points">
+                      {w.points.map((p, i) => <li key={i}>{p}</li>)}
+                    </ul>
                   </div>
                   <div className="card-meta">
                     <div className="card-name">{w.name} <span className="italic">— {w.kind}</span></div>
-                    <div className="card-year">{w.year} ↗</div>
+                    <div className="card-year">{w.year}</div>
                   </div>
                   <div className="card-tags">{w.tags.map((t, i) => <span key={i}>{t}</span>)}</div>
-                </a>
+                </div>
               ))}
             </div>
           )}

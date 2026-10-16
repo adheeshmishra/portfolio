@@ -94,7 +94,7 @@ export default function Hero({ variant }) {
             </div>
             <div className="hero-cta reveal d5">
               <Magnetic><a href="#work" className="btn btn-dark">View Work <span className="arr">→</span></a></Magnetic>
-              <Magnetic><a href="mailto:adheeshmishra525@gmail.com" className="btn btn-ghost">adheeshmishra525@gmail.com</a></Magnetic>
+              <Magnetic><a href="mailto:adheeshmishra525@gmail.com" className="btn btn-ghost btn-mail">adheeshmishra525@gmail.com</a></Magnetic>
             </div>
           </>
         ) : (
