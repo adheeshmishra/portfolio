@@ -34,7 +34,7 @@ export default function ExperienceSection() {
           <div className="work-head">
             <h2 className="h2 reveal">A short <span className="italic">history.</span></h2>
             <p className="h2-sub reveal d1">
-              Five stations, roughly chronological. <em>Most are still in touch.</em>
+              Three roles and a degree, <em>most recent first.</em>
             </p>
           </div>
           <div className="timeline" ref={rootRef}>
@@ -47,7 +47,7 @@ export default function ExperienceSection() {
                   {e.italic ? <span className="italic">{e.role}</span> : e.role}
                 </div>
                 <div className="tl-co">{e.co}</div>
-                <div className="tl-loc">{e.loc}</div>
+                <div className="tl-loc">{e.meta}</div>
               </div>
             ))}
           </div>

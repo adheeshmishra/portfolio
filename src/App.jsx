@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react'
+import { useEffect, useRef } from 'react'
 import Loader from './components/Loader'
 import Nav from './components/Nav'
 import Hero from './components/Hero'
@@ -6,19 +6,14 @@ import Strip from './components/Strip'
 import WorkSection from './components/WorkSection'
 import AboutSection from './components/AboutSection'
 import ExperienceSection from './components/ExperienceSection'
-import NowSection from './components/NowSection'
 import SkillsSection from './components/SkillsSection'
 import ContactSection from './components/ContactSection'
 import TimeChip from './components/TimeChip'
-import TweaksPanel from './components/TweaksPanel'
 
-const DEFAULTS = {
-  bg: 'cream',
-  accent: 'moss',
-  serif: 'cormorant',
+// Theme (forest / moss / cormorant / cozy) is fixed via data attributes on <body> in index.html.
+const LAYOUT = {
   heroVariant: 3,
   workLayout: 'cards',
-  density: 'cozy',
 }
 
 function useReveal() {
@@ -34,19 +29,8 @@ function useReveal() {
 }
 
 export default function App() {
-  const [tweaks, setTweaks] = useState(DEFAULTS)
-  const [tweaksOpen, setTweaksOpen] = useState(false)
   const cursorRef = useRef(null)
   const progressRef = useRef(null)
-
-  const setTweak = (key, value) => setTweaks(prev => ({ ...prev, [key]: value }))
-
-  useEffect(() => {
-    document.body.dataset.bg = tweaks.bg
-    document.body.dataset.accent = tweaks.accent
-    document.body.dataset.serif = tweaks.serif
-    document.body.dataset.density = tweaks.density
-  }, [tweaks.bg, tweaks.accent, tweaks.serif, tweaks.density])
 
   useReveal()
 
@@ -97,16 +81,6 @@ export default function App() {
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
 
-  useEffect(() => {
-    const onKey = (e) => {
-      if ((e.key === 't' || e.key === 'T') && !e.ctrlKey && !e.metaKey) {
-        setTweaksOpen(v => !v)
-      }
-    }
-    window.addEventListener('keydown', onKey)
-    return () => window.removeEventListener('keydown', onKey)
-  }, [])
-
   return (
     <>
       <Loader />
@@ -117,26 +91,15 @@ export default function App() {
       </div>
 
       <Nav />
-      <Hero variant={tweaks.heroVariant} />
+      <Hero variant={LAYOUT.heroVariant} />
       <Strip />
-      <WorkSection layout={tweaks.workLayout} />
+      <WorkSection layout={LAYOUT.workLayout} />
       <AboutSection />
       <ExperienceSection />
-      <NowSection />
       <SkillsSection />
       <ContactSection />
 
       <TimeChip />
-      <button className="tweaks-trigger" onClick={() => setTweaksOpen(true)}>
-        Tweaks
-      </button>
-
-      <TweaksPanel
-        open={tweaksOpen}
-        onClose={() => setTweaksOpen(false)}
-        tweaks={tweaks}
-        setTweak={setTweak}
-      />
     </>
   )
 }

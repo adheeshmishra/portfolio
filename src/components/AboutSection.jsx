@@ -19,11 +19,10 @@ function PortraitParallax() {
   return (
     <div className="portrait-wrap reveal">
       <div className="portrait" ref={ref}>
-        <div className="p-lab">Portrait</div>
-        <div className="p-pl">— your photo here —</div>
+        <img className="p-img" src="/portrait.jpg" alt="Adheesh Mishra" />
       </div>
       <div className="portrait-cap">
-        <span>Bengaluru</span><span>2026</span>
+        <span>Adheesh Mishra</span><span>2026</span>
       </div>
     </div>
   )
@@ -39,21 +38,21 @@ export default function AboutSection() {
             <PortraitParallax />
             <div className="about-body">
               <h3 className="reveal d1">
-                A <span className="italic">software engineer</span> who treats interfaces with the same care as databases.
+                A <span className="italic">backend engineer</span> who cares about correctness as much as speed.
               </h3>
               <p className="reveal d2">
-                I build calm, well-considered tools. Mostly backend and full-stack, with a soft spot for developer experience and the small interactions that make products feel alive.
+                I'm a Senior Software Engineer at PharmaACE, where I architected a configurable salary increment platform on FastAPI and PostgreSQL — with asynchronous approval workflows on Amazon SQS, idempotent consumers, and point-in-time payroll reconstruction for audit.
               </p>
               <p className="reveal d3">
-                I care about the <em>small moments</em> — the right query plan, the cleanest API surface, the exact easing of a tooltip. The difference between fine and great lives there.
+                I care about the <em>details that hold up under load</em> — row-level locking and optimistic concurrency, normalized schemas with targeted indexes, keyset pagination that takes deep pages from ~1.8s to ~50ms.
               </p>
               <p className="reveal d4">
-                Before this, I studied CS and spent four years on the platform team at a Series-B startup. Outside work I read a lot, run slowly, and write occasionally.
+                Before PharmaACE, I owned the Distributor and Internal Manager portals at HealthAssure and migrated production to AWS with Terraform. I studied at SGSITS, Indore, and today lead an 8-member cross-functional team.
               </p>
               <div className="about-stats">
-                <div className="reveal d1"><div className="stat-num">07</div><div className="stat-label">Years shipping</div></div>
-                <div className="reveal d2"><div className="stat-num">32</div><div className="stat-label">Projects shipped</div></div>
-                <div className="reveal d3"><div className="stat-num">∞</div><div className="stat-label">Cups of chai</div></div>
+                <div className="reveal d1"><div className="stat-num">04</div><div className="stat-label">Years shipping</div></div>
+                <div className="reveal d2"><div className="stat-num">255+</div><div className="stat-label">API endpoints</div></div>
+                <div className="reveal d3"><div className="stat-num">08</div><div className="stat-label">Engineers led</div></div>
               </div>
             </div>
           </div>

@@ -1,6 +1,6 @@
 const ITEMS = [
-  "Full-stack engineering", "Distributed systems", "Developer tools",
-  "TypeScript & Go", "Postgres", "Design systems", "Open source",
+  "Backend engineering", "Distributed systems", "Event-driven architecture",
+  "FastAPI & Node.js", "PostgreSQL", "Concurrency control", "AWS",
 ]
 
 function Row() {

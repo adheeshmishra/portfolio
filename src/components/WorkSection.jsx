@@ -43,7 +43,7 @@ export default function WorkSection({ layout }) {
           <div className="work-head">
             <h2 className="h2 reveal">Selected <span className="italic">works.</span></h2>
             <p className="h2-sub reveal d1">
-              Six projects from the past few years — <em>most shipped, some still humming, one quietly retired.</em>
+              Six systems from PharmaACE and HealthAssure — <em>all shipped, all in production.</em>
             </p>
           </div>
 

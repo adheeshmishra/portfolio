@@ -13,27 +13,23 @@ export default function ContactSection() {
       <LeafSvg className="c-leaf tl" />
       <LeafSvg className="c-leaf br" />
 
-      <div className="c-eyebrow reveal">N° 07 · Get in touch</div>
+      <div className="c-eyebrow reveal">N° 06 · Get in touch</div>
       <h2 className="c-big reveal d1">Let's <span className="italic">talk.</span></h2>
 
       <Magnetic strength={0.15}>
-        <a href="mailto:hello@adheesh.in" className="c-mail reveal d2" data-hover="big">
-          hello@adheesh.in <span className="arr">→</span>
+        <a href="mailto:adheeshmishra525@gmail.com" className="c-mail reveal d2" data-hover="big">
+          adheeshmishra525@gmail.com <span className="arr">→</span>
         </a>
       </Magnetic>
 
       <div className="c-secondary reveal d3">
-        <Magnetic><a className="btn btn-ghost" href="#" data-hover="big">Schedule a call</a></Magnetic>
-        <Magnetic><a className="btn btn-ghost" href="#" data-hover="big">Resume (PDF)</a></Magnetic>
+        <Magnetic><a className="btn btn-ghost" href="/Adheesh_Mishra_Resume.pdf" target="_blank" rel="noopener noreferrer" data-hover="big">Resume (PDF)</a></Magnetic>
       </div>
 
       <div className="footer">
-        <div>© 2026 — Adheesh / built quietly, in cream</div>
+        <div>© 2026 — Adheesh Mishra / built quietly, in forest green</div>
         <div className="socials">
-          <a href="#">Twitter</a>
-          <a href="#">LinkedIn</a>
-          <a href="#">GitHub</a>
-          <a href="#">Read.cv</a>
+          <a href="https://www.linkedin.com/in/adheesh-mishra-118a061b3/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         </div>
       </div>
     </section>

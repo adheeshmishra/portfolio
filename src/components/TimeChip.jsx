@@ -17,7 +17,7 @@ export default function TimeChip() {
     <div className="timechip">
       <span className="tc-dot" />
       <span>{time}</span>
-      <span>IST · Bengaluru</span>
+      <span>IST · India</span>
     </div>
   )
 }

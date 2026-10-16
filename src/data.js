@@ -1,44 +1,29 @@
 export const TAGLINES = [
-  "Writing software, quietly. Shipping it, intently.",
-  "Small studio of one — building well-made tools.",
-  "Backend by trade, design by appetite.",
+  "Backend systems that stay correct under load.",
+  "FastAPI, PostgreSQL, and the queues in between.",
+  "From query plans to React dashboards — end to end.",
 ]
 
 export const WORK = [
-  { id: 1, num: "001", name: "Halcyon", kind: "banking core", year: 2025, tags: ["Go", "Ledger", "gRPC"], blurb: "A double-entry ledger that ran a 9-figure book without breaking a sweat." },
-  { id: 2, num: "002", name: "Marble", kind: "editorial CMS", year: 2024, tags: ["TypeScript", "Next.js", "Founding"], blurb: "Founding engineer — built the CMS, the pipeline, and most of the brand." },
-  { id: 3, num: "003", name: "Field Notes", kind: "travel journal", year: 2024, tags: ["Swift", "CRDT", "iOS"], blurb: "Local-first travel log with peer sync — a quiet weekend obsession." },
-  { id: 4, num: "004", name: "Lantern", kind: "developer tool", year: 2023, tags: ["Rust", "CLI", "OSS"], blurb: "A tiny log-search CLI used by ~3k engineers a month." },
-  { id: 5, num: "005", name: "Pinecone", kind: "health platform", year: 2023, tags: ["React Native", "Node", "Contract"], blurb: "Built the mobile app and onboarding flow for a Series-A health startup." },
-  { id: 6, num: "006", name: "Aarany", kind: "web concept", year: 2022, tags: ["Web", "Personal"], blurb: "Hospitality concept site — typography study + light CMS." },
+  { id: 1, num: "001", name: "Salary Increment Platform", kind: "payroll rules engine", year: "2025", tags: ["FastAPI", "PostgreSQL", "SQS"], blurb: "A configurable rules engine that replaced Excel-driven workflows and cut policy rollout from ~2 months to under a day." },
+  { id: 2, num: "002", name: "Faceted Query Framework", kind: "analytics API layer", year: "2024–25", tags: ["FastAPI", "PostgreSQL", "255+ endpoints"], blurb: "Reusable filtering with tri-state select/exclude and server-side facet aggregation across 11 analytics modules." },
+  { id: 3, num: "003", name: "Scanner Modules", kind: "pharma intelligence", year: "2024–25", tags: ["React", "FastAPI", "30K+ products"], blurb: "Company, Product, and Disease scanners covering 2,621 companies, 30K+ products, and 5,035 diseases." },
+  { id: 4, num: "004", name: "Hybrid Pagination", kind: "clinical trials search", year: "2024–25", tags: ["PostgreSQL", "Keyset", "1.8s → 50ms"], blurb: "Keyset plus offset pagination over 300K+ clinical trial records; deep-page latency from ~1.8s to ~50ms." },
+  { id: 5, num: "005", name: "Clinical RAG", kind: "LLM retrieval pipeline", year: "2024–25", tags: ["Llama 3", "FAISS", "Embeddings"], blurb: "Semantic retrieval over proprietary pharmaceutical knowledge bases, surfacing clinical context for analysts." },
+  { id: 6, num: "006", name: "Distributor Portals", kind: "insurance platform", year: "2022–24", tags: ["Node.js", "React", "AWS"], blurb: "Distributor and Internal Manager portals serving 500+ distributors; API response times down ~45%." },
 ]
 
 export const EXPERIENCE = [
-  { year: "2025 — Now", role: "Senior Software Engineer", co: "Halcyon Banking", loc: "Bengaluru, IN" },
-  { year: "2023 — 2025", role: "Founding Engineer", co: "Marble (acq. 2025)", loc: "Remote" },
-  { year: "2021 — 2023", role: "Product Engineer", co: "Pinecone Health", loc: "Mumbai, IN" },
-  { year: "2019 — 2021", role: "Software Engineer", co: "Studio of Two", loc: "Bengaluru, IN" },
-  { year: "2015 — 2019", role: "B.Tech, Computer Science", italic: true, co: "Indian Institute of Technology", loc: "Bombay, IN" },
-]
-
-export const NOW = [
-  { tag: "Building", date: "This week", title: "A query planner for an embedded KV store.", body: "Slow work, fun work. The kind of project where every commit is one perf graph at a time." },
-  { tag: "Reading", date: "Apr 2026", title: "Designing Data-Intensive Applications,", titleSuffix: "second pass.", body: "Different book the second time. The chapter on consistency models finally clicked." },
-  { tag: "Listening", date: "Lately", title: "Khruangbin, mostly.", body: "Some Arvo Pärt on focused mornings. A lot of brown noise at 2am." },
-  { tag: "Learning", date: "May 2026", title: "Rust async &", titleSuffix: "io_uring.", body: "Building a tiny HTTP server with raw rings. It's faster than I expected, slower than I'd like." },
-  { tag: "Place", date: "Q3 2026", title: "Bengaluru →", titleSuffix: "Goa.", body: "Working remote for a month, then returning. Bringing the keyboard, leaving the meetings." },
-  { tag: "Writing", date: "Coming soon", title: "A short note on", titleSuffix: "calm software.", body: "Halfway through draft three. It still feels slightly too earnest. That might be the point." },
+  { year: "Oct 2025 — Now", role: "Senior Software Engineer", co: "PharmaACE Pvt Ltd", meta: "FastAPI · PostgreSQL · SQS" },
+  { year: "2024 — 2025", role: "Software Engineer", co: "PharmaACE Pvt Ltd", meta: "FastAPI · React · RAG" },
+  { year: "2022 — 2024", role: "Software Engineer", co: "HealthAssure Pvt Ltd", meta: "Node.js · React · AWS" },
+  { year: "2018 — 2022", role: "B.Tech", italic: true, co: "SGSITS", meta: "Indore, IN" },
 ]
 
 export const SKILLS = [
-  { name: "TypeScript", years: 6, italic: false, related: ["Node", "Bun", "Deno"] },
-  { name: "Go", years: 4, italic: true, related: ["Fiber", "gRPC", "Cobra"] },
-  { name: "Rust", years: 2, italic: false, related: ["Tokio", "Axum", "Serde"] },
-  { name: "Python", years: 7, italic: true, related: ["FastAPI", "Pandas", "Ruff"] },
-  { name: "Postgres", years: 7, italic: false, related: ["Logical replication", "pgx", "pgvector"] },
-  { name: "Redis", years: 5, italic: true, related: ["Pub/sub", "Streams"] },
-  { name: "React", years: 6, italic: false, related: ["Next.js", "Remix", "Tailwind"] },
-  { name: "Infra", years: 5, italic: true, related: ["Docker", "K8s", "Terraform", "AWS"] },
+  { name: "Languages", italic: false, related: ["Java", "Python", "TypeScript", "JavaScript", "SQL"] },
+  { name: "Frameworks", italic: true, related: ["FastAPI", "Node.js", "Express.js", "React.js", "Redux", "REST APIs", "GraphQL"] },
+  { name: "Databases", italic: false, related: ["PostgreSQL", "MongoDB", "Redis"] },
+  { name: "Cloud", italic: true, related: ["AWS (EC2, ECS, Lambda, RDS, S3, API Gateway, IAM, SQS, SNS, CloudWatch)", "Docker", "Nginx"] },
+  { name: "Core CS", italic: false, related: ["System Design", "Distributed Systems", "Event-Driven Architecture", "Concurrency Control", "Database Design", "Performance Optimization"] },
 ]
-
-export const MAX_YEARS = 7

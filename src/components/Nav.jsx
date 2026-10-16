@@ -6,7 +6,7 @@ export default function Nav() {
   useEffect(() => {
     const nav = navRef.current
     const links = nav.querySelectorAll('.nav-links a')
-    const ids = ['work', 'about', 'experience', 'now', 'skills', 'contact']
+    const ids = ['work', 'about', 'experience', 'skills', 'contact']
 
     const onScroll = () => {
       nav.classList.toggle('scrolled', window.scrollY > 40)
@@ -46,7 +46,6 @@ export default function Nav() {
         <a href="#work" data-section="work">Work</a>
         <a href="#about" data-section="about">About</a>
         <a href="#experience" data-section="experience">Experience</a>
-        <a href="#now" data-section="now">Now</a>
         <a href="#skills" data-section="skills">Skills</a>
         <a href="#contact" data-section="contact">Contact</a>
       </div>
@@ -55,7 +54,7 @@ export default function Nav() {
         onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
       >
         <span className="nav-dot" />
-        <span className="nav-cta-text">Available</span>
+        <span className="nav-cta-text">Contact</span>
       </button>
     </nav>
   )
